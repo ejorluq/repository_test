@@ -8,7 +8,6 @@ weightmedian <- function(directory, day) # content of the function
         }
         dat_subset <- dat[which(dat[, "Day"]== day), ] # subsets the rows tha match the 'day'  argument
         median(dat_subset[, "Weight"], na.rm = TRUE)   # identifies the median weight 
-                                                        # while stripping out the NAs 
 }
 
 
